@@ -11,7 +11,7 @@ const calistoga = Calistoga({
  });
 
 export const metadata: Metadata = {
-  title: "Gabriel's Otirb Portfolio",
+  title: "Gabriel's Portfolio",
   description: "Discover my creative portfolio, full of unique projects and innovative solutions to transform ideas into reality.",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body 
       className={twMerge(
         inter.variable,
