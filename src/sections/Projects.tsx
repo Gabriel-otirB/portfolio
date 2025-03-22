@@ -5,6 +5,8 @@ import Image from 'next/image';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
+import SectionHeader from '@/components/SectionHeader';
+import Card from '@/components/Card';
 
 const portfolioProjects = [
   {
@@ -49,22 +51,12 @@ export const ProjectsSection = () => {
   return (
     <section className='pb-16 lg:py-24'>
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text">
-            Impacto real com tecnologia
-          </p>
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Projetos em Destaque</h2>
-        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
-          Veja como converti conceitos em soluções digitais funcionais e envolventes.
-        </p>
+        <SectionHeader eyebrow='Impacto real com tecnologia' title='Projetos em Destaque' description='Veja como converti conceitos em soluções digitais funcionais e envolventes.' />
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project) => (
-            <div key={project.title}
-              className="bg-gray-800 rounded-3xl relative overflow-hidden z-0 p-8 px-8 md:px-10 lg:px-20 pt-8 md:pt-12 lg:pt-16
-              after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none"
+            <Card key={project.title}
+                  className="px-8 pt-8 pb-0 md:px-10 md:pt-12 lg:pt-16 lg:px-20"
             >
-              <div className='absolute inset-0 -z-10 opacity-5' style={{ backgroundImage: `url(${grainImage.src})` }}></div>
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                 <div className='lg:pb-16'> {/* or lg:pb-8 */}
                   <div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
@@ -97,7 +89,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

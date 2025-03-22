@@ -6,13 +6,13 @@ const words = [
   "Segurança",
   "Interativo",
   "Escalabilidade",
-  "Manutenível",
+  "Integração",
   "Pesquisa Otimizada",
   "Confiabilidade",
-  "Sustentabilidade",
   "Inovação",
+  "Robustez",
   "Eficiência",
-  "Consistência",
+  "Sustentabilidade",
 ]
 
 export const TapeSection = () => {
