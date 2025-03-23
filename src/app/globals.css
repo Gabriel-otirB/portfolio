@@ -12,8 +12,12 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .container {
-    @apply lg:max-w-5xl;
+    @apply w-full lg:max-w-5xl;
   }
 }

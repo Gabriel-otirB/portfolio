@@ -2,8 +2,8 @@
 
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
-import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 //Icons
 import JavascriptIcon from "@/assets/icons/javascript.svg";
@@ -171,7 +171,7 @@ export const AboutSection = () => {
   const constraintRef = useRef(null);
 
   return (
-    <div className="py-20 lg:py-28">
+    <section id="about" className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="Sobre mim"
@@ -198,7 +198,7 @@ export const AboutSection = () => {
                   description="Descubra as tecnologias que utilizo para construir aplicações poderosas e com excelente experiência de usuário."
                   className=""
                 />
-                <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName='animate-move-left [animation-duration:55s]' />
+                <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:55s]" />
                 <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:35s]" />
               </Card>
             </div>
@@ -242,11 +242,11 @@ export const AboutSection = () => {
              after:-outline-offset-2 after:rounded-full
              after:outline-gray-950/30">
                   <div
-                    className='absolute inset-0 rounded-full
+                    className="absolute inset-0 rounded-full
                     bg-gradient-to-r from-emerald-300 to-sky-400 -z-20
-                    animate-ping [animation-duration:2s]'
+                    animate-ping [animation-duration:2s]"
                   ></div>
-                  <div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10'></div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
                   <Image src={smileMemoji} alt="smiling memoji" className="size-20 mt-2" />
                 </div>
               </Card>
@@ -254,6 +254,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div >
+    </section >
   );
 };

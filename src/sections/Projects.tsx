@@ -49,12 +49,12 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader eyebrow="Impacto real com tecnologia" title="Projetos em Destaque" description="Veja como converti conceitos em soluções digitais funcionais e envolventes." />
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project, projectIndex) => (
-            <div key={project.title} className='sticky' style={{ top: `calc(64px + ${projectIndex * 40}px)` }}>
+            <div key={project.title} className="sticky" style={{ top: `calc(64px + ${projectIndex * 40}px)` }}>
               <Card
                 className="px-8 pt-8 pb-0 md:px-10 md:pt-12 lg:pt-16 lg:px-20 "
               >

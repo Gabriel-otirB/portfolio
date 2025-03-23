@@ -8,7 +8,7 @@ import HeroOrbit from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div id="hero" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
 
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
 
@@ -21,13 +21,6 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
-
-        {/* 
-        orbinDuration,
-        shouldOrbit = false,
-        shouldSpin = false,
-        spinDuration, 
-        */}
 
         <HeroOrbit size={430} rotation={-14} shouldOrbit orbinDuration="30s" shouldSpin spinDuration="6s">
           <SparkleIcon className="size-8 text-emerald-300/20" />
