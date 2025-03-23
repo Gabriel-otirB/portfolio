@@ -1,28 +1,47 @@
-import SectionHeader from "@/components/SectionHeader";
-import Card from "@/components/Card";
+"use client"
+
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
 
 //Icons
-import JavascriptIcon from "@/assets/icons/square-js.svg";
+import JavascriptIcon from "@/assets/icons/javascript.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
 import GitHubIcon from "@/assets/icons/github.svg";
+import NextJsIcon from "@/assets/icons/nextjs.svg";
+import TypeScriptIcon from "@/assets/icons/typescript.svg";
+import NodeIcon from "@/assets/icons/nodejs.svg";
+import PHPIcon from "@/assets/icons/php.svg";
+import JavaIcon from "@/assets/icons/java.svg";
+import CSharpIcon from "@/assets/icons/csharp.svg";
+import TailwindIcon from "@/assets/icons/tailwindcss.svg";
+import BootstrapIcon from "@/assets/icons/bootstrap.svg";
+import MySqlIcon from "@/assets/icons/mysql.svg";
+import MongoDbIcon from "@/assets/icons/mongodb.svg";
+import MariaDbIcon from "@/assets/icons/mariadb.svg";
+import PostgressIcon from "@/assets/icons/postgresql.svg";
+import FirebaseIcon from "@/assets/icons/firebase.svg";
+import AwsIcon from "@/assets/icons/aws.svg";
+import GcpIcon from "@/assets/icons/gcp.svg";
+
+//Images
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
+
+//Components
 import CardHeader from "@/components/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
+import SectionHeader from "@/components/SectionHeader";
+import Card from "@/components/Card";
+
 
 const toolboxItems = [
   {
     title: "JavaScript",
     iconType: JavascriptIcon,
-  },
-  {
-    title: "ChromeIcon",
-    iconType: ChromeIcon,
   },
   {
     title: "HTML5",
@@ -39,7 +58,67 @@ const toolboxItems = [
   {
     title: "Github",
     iconType: GitHubIcon,
-  }
+  },
+  {
+    title: "Next.JS",
+    iconType: NextJsIcon,
+  },
+  {
+    title: "TypeScript",
+    iconType: TypeScriptIcon,
+  },
+  {
+    title: "Node.JS",
+    iconType: NodeIcon,
+  },
+  {
+    title: "PHP",
+    iconType: PHPIcon,
+  },
+  {
+    title: "Java",
+    iconType: JavaIcon,
+  },
+  {
+    title: "C#",
+    iconType: CSharpIcon,
+  },
+  {
+    title: "Tailwind",
+    iconType: TailwindIcon,
+  },
+  {
+    title: "Bootstrap",
+    iconType: BootstrapIcon,
+  },
+  {
+    title: "MySQL",
+    iconType: MySqlIcon,
+  },
+  {
+    title: "MongoDB",
+    iconType: MongoDbIcon,
+  },
+  {
+    title: "MariaDB",
+    iconType: MariaDbIcon,
+  },
+  {
+    title: "Postgress",
+    iconType: PostgressIcon,
+  },
+  {
+    title: "Firebase",
+    iconType: FirebaseIcon,
+  },
+  {
+    title: "AWS",
+    iconType: AwsIcon,
+  },
+  {
+    title: "GCP",
+    iconType: GcpIcon,
+  },
 ];
 
 const hobbies = [
@@ -88,6 +167,9 @@ const hobbies = [
 ]
 
 export const AboutSection = () => {
+
+  const constraintRef = useRef(null);
+
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -116,8 +198,8 @@ export const AboutSection = () => {
                   description="Descubra as tecnologias que utilizo para construir aplicações poderosas e com excelente experiência de usuário."
                   className=""
                 />
-                <ToolboxItems items={toolboxItems} className="" />
-                <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2" />
+                <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName='animate-move-left [animation-duration:55s]' />
+                <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:35s]" />
               </Card>
             </div>
           </div>
@@ -129,16 +211,19 @@ export const AboutSection = () => {
                   description="Veja meus hobbies e interesses além da bolha digital."
                   className="px-6 py-6"
                 />
-                <div className="relative flex-1">
+                <div className="relative flex-1" ref={constraintRef}
+                >
                   {hobbies.map(hobby => (
-                    <div key={hobby.title}
+                    <motion.div key={hobby.title}
                       className="inline-flex items-center gap-2 py-1.5 px-6 absolute
                      bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full"
                       style={{ left: hobby.left, top: hobby.top, }}
+                      drag
+                      dragConstraints={constraintRef}
                     >
                       <span className="font-medium text-gray-950">{hobby.title}</span>
                       <span>{hobby.emoji}</span>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </Card>
@@ -152,10 +237,16 @@ export const AboutSection = () => {
                 />
                 <div className="absolute top-1/2 left-1/2
              -translate-x-1/2 -translate-y-1/2 size-20
-             rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-['']
+             rounded-full after:content-['']
              after:absolute after:inset-0 after:outline after:outline-2
              after:-outline-offset-2 after:rounded-full
              after:outline-gray-950/30">
+                  <div
+                    className='absolute inset-0 rounded-full
+                    bg-gradient-to-r from-emerald-300 to-sky-400 -z-20
+                    animate-ping [animation-duration:2s]'
+                  ></div>
+                  <div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10'></div>
                   <Image src={smileMemoji} alt="smiling memoji" className="size-20 mt-2" />
                 </div>
               </Card>
