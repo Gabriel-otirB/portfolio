@@ -11,19 +11,19 @@ import Card from "@/components/Card";
 const testimonials = [
     {
         name: "Oliver Tadeo",
-        position: "Gerente de Marketing @ Soluções Digitais",
+        position: "Gerente de Marketing @ Software",
         text: "Trabalhar com o Gabriel foi uma experiência incrível. Ele transformou nosso site em uma poderosa ferramenta de marketing. Sua atenção aos detalhes e capacidade de entender nossa marca são excepcionais. Estamos muito satisfeitos com os resultados!",
         avatar: memojiAvatar1,
     },
     {
         name: "Jeniffer Santos",
-        position: "Chefe de Design @ VerdeDesign",
+        position: "Chefe de Design @ Sharp Design",
         text: "Trabalhar com Gabriel foi um prazer. Sua expertise no desenvolvimento frontend trouxe nossos designs à vida de uma maneira que nunca imaginamos. O site superou todas as nossas expectativas.",
         avatar: memojiAvatar2,
     },
     {
         name: "Michael Martinez",
-        position: "CEO @ InovaTechnolgy Solutions",
+        position: "CEO @ NewEra Tech Solutions",
         text: "A habilidade de Gabriel em criar experiências de usuário perfeitas é incomparável. Desde o lançamento do novo design, tivemos um aumento significativo nas conversões. Não poderíamos estar mais felizes.",
         avatar: memojiAvatar3,
     },
