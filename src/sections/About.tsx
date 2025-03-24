@@ -185,6 +185,7 @@ export const AboutSection = () => {
                 <CardHeader
                   title="Graduações"
                   description="Veja a base acadêmica que moldou minha perspectiva."
+                  className=""
                 />
                 <div className="w-40 mx-auto mt-2 md:mt-0">
                   <Image src={bookImage} alt="Book Cover" />
