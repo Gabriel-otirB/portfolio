@@ -159,7 +159,7 @@ const hobbies = [
     top: "70%",
   },
   {
-    title: "Cozinhar",
+    title: "Culinária",
     emoji: "🍔",
     left: "5%",
     top: "65%",
