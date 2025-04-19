@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/6687bc7c-1900-407e-99a5-74968dc11880
 - Página inicial com apresentação pessoal
 - Sessão de projetos com links para repositórios ou deploys
 - Sessão sobre mim com breve biografia
-- Contato com links para redes sociais ou formulário (opcional)
+- Contato com links para redes sociais ou formulário
 - Responsivo para mobile e desktop
 
 
