@@ -1,49 +1,35 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import vehiql from "@/assets/images/vehiql.png";
+import alvoConcreto from "@/assets/images/alvo-concreto.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Vehiql",
+    year: "2025",
+    title: "Plataforma de venda e gestão de veículos para Concessionárias",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Melhoria de 40% na Experiência do Usuário" },
+      { title: "Aumento de 50% na Velocidade do Site" },
+      { title: "Crescimento de 35% no Tráfego Móvel" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://vehiql-brown.vercel.app/",
+    image: vehiql,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Alvo Concreto",
+    year: "2025",
+    title: "Landing Page Comercial para Concreteira",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Incremento de 20% nas Vendas" },
+      { title: "Expansão de 35% no Alcance de Clientes" },
+      { title: "Aumento de 15% na Reconhecimento da Marca" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://alvo-concreto.vercel.app/",
+    image: alvoConcreto,
   },
 ];
 
@@ -75,7 +61,7 @@ export const ProjectsSection = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href={project.link}>
+                    <a href={project.link} target='_blank'>
                       <button
                         className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl
                                   font-semibold inline-flex items-center gap-2 mt-8 hover:scale-105 transition-all duration-300">
