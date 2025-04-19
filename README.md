@@ -1,6 +1,6 @@
 # Portfolio
 
-Esta aplicação é o repositório do meu portfólio pessoal, desenvolvido com [Next.js](https://nextjs.org/) e [Tailwind CSS](https://tailwindcss.com/). Aqui apresento meus projetos, experiências e informações profissionais.
+Esta aplicação é o repositório do meu portfólio pessoal, desenvolvido com Next.js, TypeScript, Tailwind CSS e HTML5. Aqui apresento meus projetos, experiências e informações profissionais.
 
 
 
@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/6687bc7c-1900-407e-99a5-74968dc11880
 
 
 ## 🚀 Teste você mesmo!
-- Acessar Portfolio: https://portfolio-3o51ddmho-gabriel-otirbs-projects.vercel.app/
+- Acessar Portfolio: [Portfolio](https://portfolio-3o51ddmho-gabriel-otirbs-projects.vercel.app/)
 
 ## ✨ Tecnologias Utilizadas
 - [Next.js](https://nextjs.org/) 
