@@ -7,7 +7,7 @@ const footerLinks = [
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/gabriell.gsb",
+    href: "https://www.instagram.com/gabriell.otirb/",
   },
   {
     title: "LinkedIn",
