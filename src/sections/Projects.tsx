@@ -1,5 +1,6 @@
 import vehiql from "@/assets/images/vehiql.png";
 import alvoConcreto from "@/assets/images/alvo-concreto.png";
+import shopinGoEcommerce from "@/assets/images/shopingo-e-commerce.png";  
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -30,6 +31,18 @@ const portfolioProjects = [
     ],
     link: "https://alvo-concreto.vercel.app/",
     image: alvoConcreto,
+  },
+  {
+    company: "ShoppinGo E-Commerce",
+    year: "2025",
+    title: "Plataforma de E-Commerce",
+    results: [
+      { title: "Melhoria de 70% na Experiência do Usuário" },
+      { title: "Aumento de 30% no número de Conversões" },
+      { title: "Expansão de 50% no Alcance de Clientes" },
+    ],
+    link: "https://shopin-go-ecommerce.vercel.app/",
+    image: shopinGoEcommerce,
   },
 ];
 
